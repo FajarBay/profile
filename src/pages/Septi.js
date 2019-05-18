@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Home = () => {
+const Septi = () => {
     return (
         <section className="banner-bottom" id="about">
 		<div className="container">
@@ -26,4 +26,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Septi;

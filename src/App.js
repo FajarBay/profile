@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 
-import Home from "./pages/Home";
+import profile from "./pages/profile";
+import Septi from "./pages/Septi";
 import Rara from "./pages/Rara";
 import Daru from "./pages/Daru";
 import Fajar from "./pages/Fajar";
@@ -15,10 +16,11 @@ class App extends Component {
         <div>
           <Navbar/>
         <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/Rara" component={Rara} />
-          <Route path="/Daru" component={Daru} />
-          <Route path="/Fajar" component={Fajar} />
+          <Route path="/" component={profile} exact /> 
+          <Route path="/Septi" component={Septi} exact />
+          <Route path="/Rara" component={Rara} exact />
+          <Route path="/Daru" component={Daru} exact />
+          <Route path="/Fajar" component={Fajar} exact />
           <Route component={Error} />
         </Switch>
         </div>
